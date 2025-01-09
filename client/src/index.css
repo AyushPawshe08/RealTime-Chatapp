@@ -9,3 +9,25 @@
 body {
     @apply font-title;
   }
+
+  /* Scrollbar width */
+::-webkit-scrollbar {
+  width: 12px; /* Adjust width as needed */
+}
+
+/* Scrollbar track */
+::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Light grey background */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Darker color for thumb */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Hover effect for scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Slightly darker shade on hover */
+}

@@ -6,7 +6,7 @@ const NoChatSelected = () => {
     <div className="flex h-screen w-full items-center justify-center ">
       <div className="text-center bg-white p-8 rounded-lg  max-w-md">
         <div className="flex animate-bounce  justify-center items-center mb-4 ">
-          <span className='bg-blue-500 rounded-md p-2 text-blue-800'><MessageSquare size={48} /></span>
+          <span className='bg-gray-200 rounded-md p-2 text-blue-800'><MessageSquare size={48} /></span>
         </div>
         <h1 className="text-2xl font-bold text-gray-800 mb-2">Welcome to Chatify~!</h1>
         <p className="text-gray-600">
