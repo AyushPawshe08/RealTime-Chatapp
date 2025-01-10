@@ -38,7 +38,7 @@ const Profile = () => {
         <div className="flex flex-col items-center gap-6">
           <div className="relative">
             <img
-              src={selectedImg || authUser.profilePic || "/avatar.png"}
+              src={selectedImg || authUser.profilePic || "/avatar.jpg"}
               alt="Profile"
               className="w-40 h-40 rounded-full object-cover border-4 border-gray-300 shadow-lg"
             />
