@@ -4,6 +4,7 @@ import SidebarSkeleton from "./skeletons/SidebarSkeleton";
 import { UserRound } from "lucide-react";
 import { useAuthStore } from "../store/useAuthStore";
 
+
 const Sidebar = () => {
   const { getUsers, users, selectedUser, setSelectedUser, isUsersLoading } =
     useChatStore();
