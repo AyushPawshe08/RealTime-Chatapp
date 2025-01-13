@@ -1,6 +1,6 @@
 {
 "version":2,
-  "builds":[https://github.com/AyushPawshe08/RealTime-Chatapp/blob/main/server/vercel.json
+  "builds":[
     {"src": "*.js", "use": "@vercel/node"}
   ],
   "routes": [
