@@ -4,7 +4,7 @@ import toast from "react-hot-toast";
 import { io } from "socket.io-client";
 
 const BASE_URL =
-  import.meta.env.MODE === "development" ? http:"https://socialchat-socket.vercel.app" : "/";
+  import.meta.env.MODE === "development" ? http:"https://localhost:5001" : "/";
 
 export const useAuthStore = create((set, get) => ({
   authUser: JSON.parse(localStorage.getItem("authUser")) || null, // Load authUser from localStorage
