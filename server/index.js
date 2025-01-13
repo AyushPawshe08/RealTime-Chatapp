@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true, limit: '10mb' })); // For URL-encod
 //this will allow you to extract json data
 app.use(cookieParser());
 app.use(cors({
-    origin: "https://socialname-frontend.vercel.app/login",
+    origin: "https://localhost:5173",
     credentials:true
 }))
 app.use('/api/auth',authRoutes)
