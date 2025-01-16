@@ -4,7 +4,7 @@ import toast from "react-hot-toast";
 import { io } from "socket.io-client";
 
 const BASE_URL =
-  import.meta.env.MODE === "development" ? "https://real-time-chatapp-delta.vercel.app" : "/";
+  import.meta.env.MODE === "development" ? "https://social-chain.onrender.com" : "/";
 
 
 export const useAuthStore = create((set, get) => ({
