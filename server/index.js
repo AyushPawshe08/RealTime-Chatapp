@@ -27,12 +27,14 @@ app.get('/', (req, res) => {
 app.use('/api/auth',authRoutes)
 app.use('/api/messages',messageRoutes)
 
-if(process.env.NODE_ENV==="production"){
-    app.use(express.static(path.join(__dirname,"../client/dist")));
-
-    app.get("*",(req,res)=>{
-        res.sendFile(path.join(__dirname,"../client","dist","index.html"))
-    })
+if (process.env.NODE_ENV === 'production') {
+  // Serve static files
+  app.use(express.static(path.join(__dirname, "../client/dist")));
+  
+  // Handle client-side routing
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "../client/dist/index.html"));
+  });
 }
 
 
